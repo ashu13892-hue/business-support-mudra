@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Support With Mudra</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Segoe UI,Arial,sans-serif;background:#f5f7fb;color:#222}
+header{position:sticky;top:0;z-index:999;background:#0d47a1;color:#fff}
+.nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:15px}
+.nav a{color:#fff;text-decoration:none;margin-left:15px}
+.hero{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;color:#fff;text-align:center;padding:120px 20px}
+.hero h1{font-size:58px}
+.hero p{font-size:22px;margin:20px 0}
+.btn{display:inline-block;padding:14px 28px;background:#d32f2f;color:#fff;text-decoration:none;border-radius:8px;margin:5px}
+section{padding:70px 20px}
+.container{max-width:1200px;margin:auto}
+.title{text-align:center;color:#0d47a1;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,.08);transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;text-align:center}
+.stat{background:#fff;padding:25px;border-radius:15px}
+.number{font-size:38px;color:#d32f2f;font-weight:bold}
+.formbox,.emi{background:#fff;padding:25px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,.08)}
+input,select,textarea{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px}
+button{padding:12px 20px;border:none;background:#0d47a1;color:#fff;border-radius:8px;cursor:pointer}
+.contact{background:#0d47a1;color:#fff}
+footer{background:#082c68;color:#fff;text-align:center;padding:25px}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;padding:14px 18px;border-radius:40px;text-decoration:none;font-weight:bold}
+</style>
+</head>
+<body>
+
+<header>
+<div class="nav">
+<h2>Business Support With Mudra</h2>
+<div>
+<a href="#services">Services</a>
+<a href="#emi">EMI</a>
+<a href="#enquiry">Enquiry</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</header>
+
+<section class="hero">
+<h1>Fast & Trusted Loan Solutions</h1>
+<p>Business Loan • Property Loan • Loan Against Property • Car Loan • Personal Loan</p>
+<a class="btn" href="#enquiry">Apply Now</a>
+<a class="btn" href="https://profile.nextapsolutions.com/BUSINESS-SUPPORT-WITH-MUDRA">Company Profile</a>
+</section>
+
+<section>
+<div class="container">
+<h2 class="title">Why Choose Us</h2>
+<div class="stats">
+<div class="stat"><div class="number" id="c1">0</div>Happy Clients</div>
+<div class="stat"><div class="number" id="c2">0</div>Loans Processed</div>
+<div class="stat"><div class="number" id="c3">0</div>Partner Banks</div>
+<div class="stat"><div class="number" id="c4">0</div>Support</div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<h2 class="title">Our Services</h2>
+<div class="grid">
+<div class="card"><h3>Business Loan</h3><p>Flexible funding solutions for business growth.</p></div>
+<div class="card"><h3>Property Loan</h3><p>Finance support for residential and commercial property.</p></div>
+<div class="card"><h3>Loan Against Property</h3><p>Get funds against your property value.</p></div>
+<div class="card"><h3>Car Loan</h3><p>Quick approval and affordable EMI plans.</p></div>
+<div class="card"><h3>Personal Loan</h3><p>Fast personal finance with simple documentation.</p></div>
+<div class="card"><h3>Financial Guidance</h3><p>Professional assistance throughout the process.</p></div>
+</div>
+</div>
+</section>
+
+<section id="emi">
+<div class="container">
+<h2 class="title">EMI Calculator</h2>
+<div class="emi">
+<input id="loan" type="number" placeholder="Loan Amount">
+<input id="rate" type="number" placeholder="Interest Rate (%)">
+<input id="months" type="number" placeholder="Tenure (Months)">
+<button onclick="calcEMI()">Calculate EMI</button>
+<h2 id="result"></h2>
+</div>
+</div>
+</section>
+
+<section id="enquiry">
+<div class="container">
+<h2 class="title">Loan Enquiry Form</h2>
+<div class="formbox">
+<input type="text" placeholder="Full Name">
+<input type="text" placeholder="Mobile Number">
+<input type="email" placeholder="Email Address">
+<input type="text" placeholder="City">
+<select>
+<option>Business Loan</option>
+<option>Property Loan</option>
+<option>Loan Against Property</option>
+<option>Car Loan</option>
+<option>Personal Loan</option>
+</select>
+<textarea rows="5" placeholder="Describe your requirement"></textarea>
+<button>Submit Enquiry</button>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2 class="title">Client Testimonials</h2>
+<div class="grid">
+<div class="card">"Professional support and fast processing."</div>
+<div class="card">"Very helpful team for business financing."</div>
+<div class="card">"Smooth experience from enquiry to approval."</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="container">
+<h2 class="title" style="color:white">Contact Us</h2>
+<p><b>Phone / WhatsApp:</b> +91 7078 172 767</p><br>
+<p><b>Email:</b> krishankant512@gmail.com</p><br>
+<p><b>Address:</b> Near Mall Godam Chauraha, Ballia, Uttar Pradesh 277001, India</p><br>
+<iframe src="https://maps.google.com/maps?q=Mall%20Godam%20Chauraha%20Ballia&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="350" style="border:0"></iframe>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Business Support With Mudra | Efficient • Quick • Prompt</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/917078172767">WhatsApp</a>
+
+<script>
+function calcEMI(){
+let p=parseFloat(document.getElementById('loan').value);
+let r=parseFloat(document.getElementById('rate').value)/12/100;
+let n=parseFloat(document.getElementById('months').value);
+let emi=(p*r*Math.pow(1+r,n))/(Math.pow(1+r,n)-1);
+document.getElementById('result').innerHTML="Monthly EMI: ₹ "+emi.toFixed(2);
+}
+function animate(id,target){
+let n=0;
+let i=setInterval(()=>{
+n+=Math.ceil(target/50);
+if(n>=target){n=target;clearInterval(i);}
+document.getElementById(id).innerText=n+"+";
+},40);
+}
+animate("c1",500);
+animate("c2",1200);
+animate("c3",25);
+animate("c4",24);
+</script>
+</body>
+</html>
